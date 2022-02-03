@@ -16,6 +16,7 @@ import {
   mintOneToken,
 } from './candy-machine';
 import { AlertState } from './utils';
+import { Hero } from './Hero';
 import { Header } from './Header';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
@@ -164,6 +165,7 @@ const Home = (props: HomeProps) => {
   return (
     <Container style={{ marginTop: 100 }}>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <Hero />
         <Paper
           style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
         >
